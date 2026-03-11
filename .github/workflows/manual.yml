@@ -1,9 +1,25 @@
 name: SampleWorkFlow
 on: push
 jobs:
-  test-echo:
+  DevDeployment:
     runs-on: [ubuntu-latest]
     steps:
-      - name: testecho
-        run: echo "Hello World 2"
+      - name: Checkout
+        run: echo "Code checkout is in progress"
+      - name: Scan
+        run: echo "Scan is in progress"
+      - name: build
+        run: echo "Dev Build is in progress"
+
+  QADeployment:
+    runs-on: windows-latest
+    steps:
+    - name: Checkout-qa
+      run: echo "QA Branch checking out is in progress"
+    - name: Scan
+      run: echo "QA Code scan is in progress"
+    - name: build
+      run: echo "QA build is in progress"
+    
+    
     

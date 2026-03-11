@@ -20,7 +20,7 @@ jobs:
     - name: Checkout-qa
       run: echo "QA Branch checking out is in progress"
     - name: Scan
-      run: echo "QA Code scan is in progress"
+      run: Get-Date
     - name: build
       run: echo "QA build is in progress"
     

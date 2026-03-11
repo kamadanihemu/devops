@@ -1,0 +1,9 @@
+name: SampleWorkFlow
+on: push
+jobs:
+  test-echo:
+    runs-on: [ubuntu-latest]
+    steps:
+      - name: testecho
+        run: echo "Hello World"
+    

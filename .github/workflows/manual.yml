@@ -1,5 +1,8 @@
 name: SampleWorkFlow
-on: [push,workflow_dispatch]
+on: 
+  push:
+      paths: 
+      - '**.html'
 jobs:
   DevDeployment:
     runs-on: [ubuntu-latest]

@@ -5,5 +5,5 @@ jobs:
     runs-on: [ubuntu-latest]
     steps:
       - name: testecho
-        run: echo "Hello World"
+        run: echo "Hello World 2"
     
